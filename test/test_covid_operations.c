@@ -186,3 +186,5 @@ void test_recoveryrate(void) {
   /* Dummy fail*/
   CU_ASSERT(200 == recoveryrate(400, 100));
 }
+
+
