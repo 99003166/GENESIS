@@ -150,3 +150,4 @@ int deathrate(int operand1, int operand2);
 int recoveryrate(int operand1, int operand2);
 
 #endif  /* #define __COVID_OPERATIONS_H__ */
+
