@@ -33,18 +33,12 @@ int main(int argc, char *argv[])
 void covid_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Visits \n2. Positive\n3. Negative\n4. Died\n5. Recovered\n6. Homequarant\n7. Revisitedpos\n8. Revisitedneg\n9. Hospquarant\n10. Compisolation\n11. Diffstatepos\n12. Diffstateneg\n13. Primecon\n14. Seconcon\n14. Infectedrate\n15. Deathrate\n16. Recoveryrate\n17.");
+    printf("\n1. Visits \n2. Positive\n3. Negative\n4. Died\n5. Recovered\n6. Homequarant\n7. Revisitedpos\n8. Revisitedneg\n9. Hospquarant\n10. Compisolation\n11. Diffstatepos\n12. Diffstateneg\n13. Primecon\n14. Seconcon\n14. Infectedrate\n15. Deathrate\n16. Recoveryrate\n17. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
     scanf("%d", &covid_operation);
-
-    if(EXIT == covid_operation)
-    {
-        printf("\nThank you. Exiting the Application\n");
-        exit(0);
-    }
-
+    
 if(INVALID != valid_operation(covid_operation))
     {
         printf("\n\tEnter the new and previous count with space between them\n");
@@ -60,9 +54,7 @@ if(INVALID != valid_operation(covid_operation))
         
     }
     
-    if(covid_operation)
-    {
-        if( VISITS==1)
+            if( VISITS==covid_operation)
         {
             printf("\n\t%d + %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -72,7 +64,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                    }
-         else if (POSITIVE==1)
+         else if (POSITIVE==covid_operation)
          {
             printf("\n\t%d + %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -82,7 +74,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                     }
-         else if (NEGATIVE==1)
+         else if (NEGATIVE==covid_operation)
          {
             printf("\n\t%d - %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -92,7 +84,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                    }
-             else if (DIED==1)
+             else if (DIED==covid_operation)
              {
             printf("\n\t%d + %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -102,7 +94,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                          }
-             else if(RECOVERED==1)
+             else if(RECOVERED==covid_operation)
              {
             printf("\n\t%d - %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -112,7 +104,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                          }
-             else if (HOMEQUARANT==1)
+             else if (HOMEQUARANT==covid_operation)
              {
             printf("\n\t%d + %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -122,7 +114,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                         }
-             else if( REVISITEDPOS==1)
+             else if( REVISITEDPOS==covid_operation)
              {
             printf("\n\t%d + %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -132,7 +124,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                          }
-            else if(REVISITEDNEG==1)
+            else if(REVISITEDNEG==covid_operation)
             {
             printf("\n\t%d - %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -142,7 +134,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                         }
-            else if(HOSPQUARANT==1)
+            else if(HOSPQUARANT==covid_operation)
             {
             printf("\n\t%d + %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -152,7 +144,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                         }
-            else if(COMPISOLATION==1)
+            else if(COMPISOLATION==covid_operation)
             {
             printf("\n\t%d + %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -162,7 +154,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                        }
-            else if (DIFFSTATEPOS==1)
+            else if (DIFFSTATEPOS==covid_operation)
             {
             printf("\n\t%d + %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -172,7 +164,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                         }
-            else if (DIFFSTATENEG==1)
+            else if (DIFFSTATENEG==covid_operation)
             {
             printf("\n\t%d - %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -182,7 +174,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                         }
-            else if (PRIMECON==1)
+            else if (PRIMECON==covid_operation)
             {
             printf("\n\t%d + %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -192,7 +184,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                         }
-            else if (SECCON==1)
+            else if (SECCON==covid_operation)
             {
             printf("\n\t%d + %d = %d\nEnter to continue", 
             covid_operand1, 
@@ -202,7 +194,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                         }
-                else if (INFECTEDRATE==1)
+                else if (INFECTEDRATE==covid_operation)
                 {
             printf("\n\t(%d / %d)*100 = %d\nEnter to continue", 
             covid_operand1, 
@@ -212,7 +204,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                             }
-            else if (DEATHRATE==1)
+            else if (DEATHRATE==covid_operation)
             {
             printf("\n\t(%d / %d)*100 = %d\nEnter to continue", 
             covid_operand1, 
@@ -222,7 +214,7 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                         }
-            else if( RECOVERYRATE==1)
+            else if( RECOVERYRATE==covid_operation)
             {
             printf("\n\t(%d / %d)*100 = %d\nEnter to continue", 
             covid_operand1, 
@@ -232,14 +224,15 @@ if(INVALID != valid_operation(covid_operation))
             __fpurge(stdin);
             getchar();
                        }
-       else
-       {
-            exit(0);
-       }
-            
+    else if(EXIT == covid_operation)
+    {
+        printf("\nThank you. Exiting the Application\n");
+        exit(0);
     }
-else
-    printf("\n\t---No counts---\n");
+       else
+                   exit(0);
+}
+           
     
 int valid_operation(int operation)
 {
