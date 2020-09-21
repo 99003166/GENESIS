@@ -1,5 +1,5 @@
 # Name of the project
-PROJECT_NAME = Calculator
+PROJECT_NAME = Design and implementation of covid management system in local hospitals
 
 # Output directory
 BUILD = build
