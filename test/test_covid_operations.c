@@ -3,7 +3,7 @@
 
 /* Modify these two lines according to the project */
 #include <covid_operations.h>
-#define PROJECT_NAME    "Design and implementation of covid management system in local hospitals"
+#define PROJECT_NAME    "covid"
 
 /* Prototypes for all the test functions */
 void test_visits(void);
