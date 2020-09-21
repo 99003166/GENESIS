@@ -1,10 +1,10 @@
 /** 
-* @file calculator_operations.h
-* Calculator application with 4 mathematical operations
+* @file covid_operations.h
+* Covid application with many operations
 *
 */
-#ifndef __CALCULATOR_OPERATIONS_H__
-#define __CALCULATOR_OPERATIONS_H__
+#ifndef __COVID_OPERATIONS_H__
+#define __COVID_OPERATIONS_H__
 
 #include <stdio.h>
 #include <stdlib.h>
