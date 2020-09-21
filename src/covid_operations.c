@@ -40,7 +40,7 @@ int revisitedneg(int operand1, int operand2)
     return operand1 - operand2;
 }
 
-int hospquarant-(int operand1, int operand2)
+int hospquarant(int operand1, int operand2)
 {
     return operand1 + operand2;
 }
