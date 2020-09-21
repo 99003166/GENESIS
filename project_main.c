@@ -49,7 +49,7 @@ if(INVALID != valid_operation(covid_operation))
     {
         printf("\n\tEnter the new and previous count with space between them\n");
         __fpurge(stdin);
-        scanf("%d %d", &calculator_operand1, &calculator_operand2);
+        scanf("%d %d", &covid_operand1, &covid_operand2);
     }
     else
     {
@@ -190,27 +190,27 @@ if(INVALID != valid_operation(covid_operation))
             break;
                 case INFECTEDRATE:
             printf("\n\t(%d / %d)*100 = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            infectedrate(calculator_operand1, calculator_operand2));
+            covid_operand1, 
+            covid_operand2,
+            infectedrate(covid_operand1, covid_operand2));
             
             __fpurge(stdin);
             getchar();
             break;
             case DEATHRATE:
             printf("\n\t(%d / %d)*100 = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            deathrate(calculator_operand1, calculator_operand2));
+            covid_operand1, 
+            covid_operand2,
+            deathrate(covid_operand1, covid_operand2));
             
             __fpurge(stdin);
             getchar();
             break;
             case RECOVERYRATE:
             printf("\n\t(%d / %d)*100 = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            recoveryrate(calculator_operand1, calculator_operand2));
+            covid_operand1, 
+            covid_operand2,
+            recoveryrate(covid_operand1, covid_operand2));
             
             __fpurge(stdin);
             getchar();
