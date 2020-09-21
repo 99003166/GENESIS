@@ -11,20 +11,28 @@
 #include <stdio_ext.h>
 
 /**
-*  adds the operand1 and operand2 and returns the result
+*  adds the visits of new people in operand2 to previous people count in operand1 and returns the result
 * @param[in] operand1 
 * @param[in] operand2 
 * @return Result of operand1 + operand2
 */
-int add(int operand1, int operand2);
+int visits(int operand1, int operand2);
 
 /**
-*  subtracts the operand1, operand2 and returns the result
+*  adds the positive tested of new people in operand2 to previously positived tested people count in operand1 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 + operand2
+*/
+int positive(int operand1, int operand2);
+
+/**
+*  subtracts the negative tested of new people in operand2 to previously positived tested people count in operand1 and returns the result
 * @param[in] operand1 
 * @param[in] operand2 
 * @return Result of operand1 - operand2
 */
-int subtract(int operand1, int operand2);
+int negative(int operand1, int operand2);
 
 /**
 *  multiply the operand1, operand2 and returns the result
