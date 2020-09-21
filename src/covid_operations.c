@@ -92,4 +92,6 @@ int recoveryrate(int operand1, int operand2)
         return 0;
     else
         return (operand1 / operand2)*100 ;
+    
+    
 }
