@@ -236,10 +236,11 @@ if(INVALID != valid_operation(covid_operation))
        {
             exit(0);
        }
-           printf("\n\t---No counts---\n");
-   
+            
     }
-
+else
+    printf("\n\t---No counts---\n");
+    
 int valid_operation(int operation)
 {
     /* Check if the operation is a valid operation */
