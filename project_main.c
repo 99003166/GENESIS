@@ -7,7 +7,7 @@
 /* Covid operation requested by user*/
 unsigned int covid_operation = 0;
 
-/* Operands on which operation count is performed */
+/* Operands on which covid operation count is performed */
 int covid_operand1 = 0;
 int covid_operand2 = 0;
 
