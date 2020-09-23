@@ -41,7 +41,7 @@ void covid_menu(void)
     
 if(INVALID != valid_operation(covid_operation))
     {
-        printf("\n\tEnter the new and previous count with space between them\n");
+        printf("\n\tSelect the choice between the operations\n");
         __fpurge(stdin);
         scanf("%d %d", &covid_operand1, &covid_operand2);
     }
