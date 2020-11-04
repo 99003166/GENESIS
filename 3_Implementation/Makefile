@@ -2,6 +2,7 @@
 PROJECT_NAME = Covid
 
 
+
 # Output directory
 BUILD = build
 
