@@ -19,6 +19,8 @@ INC	= -Iinc
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
 
 # Default target built
 $(PROJECT_NAME):all
@@ -32,6 +34,10 @@ all: $(SRC) $(BUILD)
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT).out
+
+# Document the code using Doxygen
+doc:
+	make -C ./documentation
 
 # Build and run the unit tests
 test:$(BUILD)
