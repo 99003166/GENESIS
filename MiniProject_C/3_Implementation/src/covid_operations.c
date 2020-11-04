@@ -1,5 +1,6 @@
 #include <covid_operations.h>
 
+
 int visits(int operand1, int operand2)
 {
     return operand1 + operand2;
