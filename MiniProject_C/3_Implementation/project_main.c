@@ -1,5 +1,6 @@
 #include <covid_operations.h>
 
+
 /* Status of the operation requested */
 #define VALID   (1)
 #define INVALID (0)
