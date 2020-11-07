@@ -1,3 +1,3 @@
-Report of MINI PROJECT
+Report of PROJECT
 
 
